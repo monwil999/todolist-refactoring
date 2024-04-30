@@ -8,9 +8,57 @@
     padding: 20px;
 }
 
+
 .section__header {
-    font-size: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
     padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 767px) {
+    .section__header {
+        grid-template-columns: 1fr;
+    }
+}
+
+.section__title {
     margin: 0;
-    border-bottom: 1px solid #ddd;
+    font-size: 20px;
+}
+
+.section__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+@media (max-width: 767px) {
+    .section__buttons {
+        flex-basis: 100%;
+        margin: 10px;
+    }
+}
+
+.section__button--header {
+    color: teal;
+    border: none;
+    background-color: white;
+    font-size: 18px;
+    padding: 20px;
+    transition: 1s;
+}
+
+.section__button--header:hover {
+    color: hsl(180, 100%, 40%);
+    cursor: pointer;
+}
+
+.section__button--hiddenAllDone:disabled {
+    color: #ccc;
+    cursor: not-allowed;
 }
