@@ -4,7 +4,7 @@
 
 **Simple list that will help you with your daily duties.**
 
-![Todolist](todolist2..ppg)
+![Todolist](todolist2..png)
 
 ## Features
 
