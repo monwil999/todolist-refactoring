@@ -68,9 +68,7 @@
     for (const task of tasks) {
       tasksListHTMLContent += `
         <li class=
-        "tasks__item ${
-          task.done && hideDoneTasks ? "tasks__item--hidden" : ""
-        }">
+        "tasks__item${task.done && hideDoneTasks ? "tasks__item--hidden" : ""}">
       <button class="tasks__button tasks__button--toggleDone js-toggleDone">
         ${task.done ? "✓" : ""}
         </button>
@@ -94,7 +92,7 @@
       htmlButtonString = "";
     } else {
       htmlButtonString = "";
-     htmlButtonString += `
+      htmlButtonString += `
         <button class= "js-toggleHideDoneTasks section__button--header">
         ${hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
         </button>
