@@ -93,14 +93,11 @@
     } else {
       htmlButtonString = "";
       htmlButtonString += `
-        <button class= "js-toggleHideDoneTasks section__button-
-        -header">
+        <button class= "js-toggleHideDoneTasks section__button--header">
         ${hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
         </button>
-        <button class= "section__button--header 
-        section__button--hiddenAllDone js-doneAllTasks"
-        ${tasks.every(({ done }) => done) ? "disabled" : ""}>
-        Ukończ wszystkie
+        <button class= "section__button--header section__button--hiddenAllDone js-doneAllTasks"
+        ${tasks.every(({ done }) => done) ? "disabled" : ""} Ukończ wszystkie
         </button>
         `;
     }
